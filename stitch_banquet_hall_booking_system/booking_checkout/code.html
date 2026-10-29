@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "on-primary-fixed": "#072019",          "tertiary-fixed": "#ffdea5",          "on-error-container": "#93000a",          "surface-dim": "#dbdad6",          "on-secondary-fixed-variant": "#574500",          "tertiary-fixed-dim": "#e9c176",          "on-secondary-fixed": "#241a00",          "surface-container-lowest": "#ffffff",          "on-surface-variant": "#424845",          "background": "#fbf9f5",          "outline-variant": "#c2c8c4",          "primary-fixed-dim": "#b1cdc1",          "on-background": "#1b1c1a",          "on-tertiary-container": "#a3813e",          "secondary-fixed-dim": "#e9c349",          "outline": "#727975",          "on-tertiary-fixed-variant": "#5d4201",          "surface": "#fbf9f5",          "primary-container": "#0a231c",          "surface-variant": "#e4e2de",          "surface-container-high": "#eae8e4",          "on-secondary-container": "#745c00",          "secondary-container": "#fed65b",          "surface-container-highest": "#e4e2de",          "inverse-primary": "#b1cdc1",          "surface-bright": "#fbf9f5",          "on-error": "#ffffff",          "on-primary": "#ffffff",          "error-container": "#ffdad6",          "secondary-fixed": "#ffe088",          "on-primary-fixed-variant": "#334c43",          "tertiary-container": "#2a1c00",          "surface-container": "#efeeea",          "on-tertiary-fixed": "#261900",          "secondary": "#735c00",          "inverse-surface": "#30312e",          "error": "#ba1a1a",          "on-tertiary": "#ffffff",          "primary-fixed": "#cde9dd",          "on-surface": "#1b1c1a",          "on-secondary": "#ffffff",          "surface-container-low": "#f5f3ef",          "primary": "#000805",          "on-primary-container": "#728c82",          "inverse-on-surface": "#f2f0ed",          "tertiary": "#0a0500",          "surface-tint": "#4b645b"        },        "borderRadius": {          "DEFAULT": "0.125rem",          "lg": "0.25rem",          "xl": "0.5rem",          "full": "0.75rem"        },        "spacing": {          "margin": "3rem",          "space-sm": "0.75rem",          "gutter": "2rem",          "space-lg": "2.5rem",          "space-xs": "0.375rem",          "space-md": "1.5rem",          "space-xl": "4rem"        },        "fontFamily": {          "body-md": ["Inter"],          "headline-md": ["Newsreader"],          "headline-sm": ["Newsreader"],          "headline-lg": ["Newsreader"],          "label-sm": ["Inter"],          "headline-xl": ["Newsreader"],          "body-sm": ["Inter"],          "label-lg": ["Inter"],          "body-lg": ["Inter"]        },        "fontSize": {          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],          "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],          "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],          "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],          "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "300" }],          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]        }      }    }  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="GrandVistas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AQKDg3OT1aZ4sDFrzzS3NhTVfGHkBJgixWv8ck5PAwSgvfytFgCWHbMTe1PzHLZJT8B2wqVZUpSA3cyp12I7dallfPMzSrg2FUZU2ureH9HgUa1HBBEDBSR2Sy5Hz1N-nBQwGUu0L9esbfLi3d2uJz05t3GOnBUUNbVqxDl_lHZqPPxT7at-ihZwpMsW1_BWaU1UwRm362k4VUp7bSLPCMD2DpVk38wznKuPCZk"/><span class="text-headline-sm font-headline-sm text-on-surface tracking-tight">GrandVistas</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="venues" href="#">Venues</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="availability" href="#">Availability</a><a aria-current="page" class="transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="bookings" href="#">Bookings</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto w-full px-gutter py-space-xl">
+<!-- Page Header / Breadcrumb -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-label-sm uppercase mb-space-xs">
+<span>Venues</span>
+<span>/</span>
+<span>Grand Imperial Ballroom</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">Checkout</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Curate Your Reservation</h1>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-sm">1</span>
+<span class="text-on-surface font-medium">Details</span>
+</div>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-label-sm">2</span>
+<span>Add-ons</span>
+</div>
+<div class="w-8 h-[1px] bg-outline-variant"></div>
+<div class="flex items-center gap-space-xs text-on-surface-variant text-body-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-label-sm">3</span>
+<span>Payment</span>
+</div>
+</div>
+</div>
+<!-- Main Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Step Forms -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- STEP 1: Event Details -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm transition-all duration-300" id="step-1-card">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">event</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Event Details</h2>
+</div>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Step 01</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-lg text-on-surface">Event Title / Occasion</label>
+<input class="bg-surface border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" placeholder="e.g., Sterling & Victoria Wedding Gala" type="text" value="Sterling & Victoria Wedding Gala"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-lg text-on-surface">Event Type</label>
+<select class="bg-surface border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none">
+<option selected="">Wedding Reception</option>
+<option>Corporate Gala</option>
+<option>Private Anniversary</option>
+<option>High-End Summit</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-lg text-on-surface">Selected Date</label>
+<input class="bg-surface border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" type="date" value="2024-10-18"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="text-label-lg text-on-surface">Guest Count (Max 450)</label>
+<input class="bg-surface border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" max="450" min="50" type="number" value="320"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-space-xs">
+<label class="text-label-lg text-on-surface">Preferred Time Slot</label>
+<div class="grid grid-cols-3 gap-space-sm">
+<label class="flex items-center justify-center p-space-sm bg-surface rounded-lg cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="accent-primary mr-2" name="timeslot" type="radio"/>
+<span class="text-body-sm text-on-surface font-medium">Evening (4pm - 12am)</span>
+</label>
+<label class="flex items-center justify-center p-space-sm bg-surface rounded-lg cursor-pointer hover:bg-surface-container transition-colors">
+<input class="accent-primary mr-2" name="timeslot" type="radio"/>
+<span class="text-body-sm text-on-surface font-medium">Daytime (10am - 4pm)</span>
+</label>
+<label class="flex items-center justify-center p-space-sm bg-surface rounded-lg cursor-pointer hover:bg-surface-container transition-colors">
+<input class="accent-primary mr-2" name="timeslot" type="radio"/>
+<span class="text-body-sm text-on-surface font-medium">Full Day Access</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 2: Catering & Culinary Add-ons -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Catering & Culinary Add-ons</h2>
+</div>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Step 02</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Option 1 -->
+<label class="flex flex-col justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:shadow-md transition-all relative border border-transparent hover:border-tertiary-fixed">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="inline-block px-2 py-0.5 bg-secondary-container text-on-secondary-container text-label-sm rounded mb-2">Signature</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Grand Royal 5-Course Dinner</h3>
+</div>
+<input checked="" class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Plated dinner featuring prime tenderloin, Chilean sea bass, and bespoke artisanal dessert curation.</p>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<span class="text-body-sm text-on-surface-variant">Per guest</span>
+<span class="text-body-md font-semibold text-on-surface">$145.00</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="flex flex-col justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:shadow-md transition-all relative border border-transparent hover:border-tertiary-fixed">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="inline-block px-2 py-0.5 bg-surface-container-high text-on-surface-variant text-label-sm rounded mb-2">Beverage</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sommelier Wine Pairing & Open Bar</h3>
+</div>
+<input checked="" class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Curated selection of vintage champagne, grand cru cellar wines, and handcrafted botanical cocktails.</p>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<span class="text-body-sm text-on-surface-variant">Per guest</span>
+<span class="text-body-md font-semibold text-on-surface">$85.00</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="flex flex-col justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:shadow-md transition-all relative border border-transparent hover:border-tertiary-fixed">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="inline-block px-2 py-0.5 bg-surface-container-high text-on-surface-variant text-label-sm rounded mb-2">Midnight</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Artisanal Truffle & Caviar Late Bar</h3>
+</div>
+<input class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Late-night indulgence featuring Osetra caviar service, white truffle mini-sliders, and artisan cheeses.</p>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<span class="text-body-sm text-on-surface-variant">Per guest</span>
+<span class="text-body-md font-semibold text-on-surface">$60.00</span>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="flex flex-col justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:shadow-md transition-all relative border border-transparent hover:border-tertiary-fixed">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<span class="inline-block px-2 py-0.5 bg-surface-container-high text-on-surface-variant text-label-sm rounded mb-2">Morning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Post-Event Recovery Brunch</h3>
+</div>
+<input class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+</div>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Private morning-after breakfast buffet in the Garden Conservatory for up to 100 VIP guests.</p>
+<div class="flex items-center justify-between pt-space-sm border-t border-surface-container">
+<span class="text-body-sm text-on-surface-variant">Flat rate</span>
+<span class="text-body-md font-semibold text-on-surface">$4,500.00</span>
+</div>
+</label>
+</div>
+</div>
+<!-- STEP 3: Luxury Decor Upgrades -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Luxury Decor & Production Upgrades</h2>
+</div>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Step 03</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="flex items-center justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-md">
+<input checked="" class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Handcrafted Floral Hanging Canopy & Chandeliers</h4>
+<p class="text-body-sm text-on-surface-variant">Cascading seasonal white orchids and crystal chandelier installation over the main hall.</p>
+</div>
+</div>
+<span class="text-body-md font-semibold text-on-surface">$3,800.00</span>
+</label>
+<label class="flex items-center justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-md">
+<input checked="" class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bespoke Monogrammed Projection & Atmospheric Lighting</h4>
+<p class="text-body-sm text-on-surface-variant">Architectural pin-spotting, dynamic color washes, and custom laser-cut name projection.</p>
+</div>
+</div>
+<span class="text-body-md font-semibold text-on-surface">$1,500.00</span>
+</label>
+<label class="flex items-center justify-between p-space-md bg-surface rounded-xl cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-space-md">
+<input class="accent-primary w-5 h-5 rounded" type="checkbox"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Gold-Leaf Chiavari Chairs & Velvet Linens</h4>
+<p class="text-body-sm text-on-surface-variant">Upgraded seating with custom velvet cushions and floor-length French silk tablecloths.</p>
+</div>
+</div>
+<span class="text-body-md font-semibold text-on-surface">$2,200.00</span>
+</label>
+</div>
+</div>
+<!-- STEP 4: Payment Simulation (Stripe/PHP Backend) -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm transition-all duration-300">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Secure Deposit & Confirmation</h2>
+</div>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Step 04</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-space-md">
+            To lock in your requested date and initiate custom vendor planning, a 25% security deposit is required today. Processed securely via Stripe backend simulation.
+          </p>
+<div class="flex flex-col gap-space-md bg-surface p-space-md rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>Card Information</span>
+<div class="flex gap-space-xs">
+<span class="text-label-sm px-1.5 py-0.5 bg-surface-container rounded text-on-surface">VISA</span>
+<span class="text-label-sm px-1.5 py-0.5 bg-surface-container rounded text-on-surface">MC</span>
+<span class="text-label-sm px-1.5 py-0.5 bg-surface-container rounded text-on-surface">AMEX</span>
+</div>
+</div>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-0 rounded-lg px-space-md py-space-sm pl-10 text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" placeholder="4242 •••• •••• 4242" type="text" value="4242 4242 4242 4242"/>
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">credit_card</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<input class="w-full bg-surface-container-low border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" placeholder="MM / YY" type="text" value="12 / 27"/>
+<input class="w-full bg-surface-container-low border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" placeholder="CVC" type="text" value="888"/>
+</div>
+<input class="w-full bg-surface-container-low border-0 rounded-lg px-space-md py-space-sm text-body-md text-on-surface focus:ring-1 focus:ring-tertiary-fixed outline-none" placeholder="Cardholder Name" type="text" value="Victoria Sterling-Vance"/>
+</div>
+<div class="flex items-center gap-space-sm text-body-sm text-on-surface-variant mb-space-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span>256-bit SSL encryption. 100% refundable up to 120 days prior to event.</span>
+</div>
+<button class="w-full py-space-md bg-primary text-on-primary rounded-xl font-label-lg flex items-center justify-center gap-space-sm hover:bg-on-primary-fixed transition-all shadow-md">
+<span class="material-symbols-outlined text-[20px]">lock_open</span>
+<span>Authorize & Secure Date ($19,950.00 Deposit)</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Order Summary Card Sticky -->
+<div class="lg:col-span-5 sticky top-28">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-md border-t-4 border-primary">
+<div class="flex items-center justify-between pb-space-md mb-space-md border-b border-surface-container">
+<div>
+<span class="text-label-sm text-on-surface-variant uppercase tracking-wider">Summary</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Grand Imperial Ballroom</h3>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">castle</span>
+</div>
+<!-- Image Preview -->
+<div class="w-full h-48 rounded-lg bg-cover bg-center mb-space-md relative overflow-hidden" data-alt="A breathtaking luxury banquet hall featuring soaring crystal chandeliers, polished dark hardwood floors, immaculate tablescapes with glowing candles, and floor-to-ceiling arched windows overlooking manicured gardens under soft twilight illumination." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBb9wvN1TwmgEuPJkM8syNy7Vp15CZThWxRd09KcUvxzAecydQ5Uj298JDBCY_bflUCj2Me2RqZnv_i6obMdfkXe-lpTkd1LRxawFUCED8cfSqqXmONJOBTe9DgEJUxiP68AmwWylB4Khc3gnS-UbAOfUQKvdZPIzTTT2r-5Fkif6ykCjIdReSGz3zdaYvbI_TJCg6bfIVRpusDECxjGEnxLuz7wNo4Vci15nw2O9g')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent flex items-end p-space-md">
+<span class="text-on-primary text-body-sm font-medium">October 18, 2024 • Evening Gala (320 Guests)</span>
+</div>
+</div>
+<!-- Line Items Breakdown -->
+<div class="flex flex-col gap-space-sm pb-space-md mb-space-md border-b border-surface-container text-body-sm">
+<div class="flex justify-between items-center text-on-surface">
+<span>Hall Rental (Peak Sat - 8 hrs)</span>
+<span class="font-medium">$18,500.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Grand Royal 5-Course ($145 × 320)</span>
+<span class="font-medium">$46,400.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Sommelier Wine Pairing ($85 × 320)</span>
+<span class="font-medium">$27,200.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Floral Canopy & Chandeliers</span>
+<span class="font-medium">$3,800.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Monogrammed Projection & Lights</span>
+<span class="font-medium">$1,500.00</span>
+</div>
+</div>
+<!-- Subtotal, Tax & Total -->
+<div class="flex flex-col gap-space-xs pb-space-md mb-space-md border-b border-surface-container text-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Estimated Subtotal</span>
+<span>$97,400.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>State & Luxury Service Tax (8.25%)</span>
+<span>$8,035.50</span>
+</div>
+<div class="flex justify-between items-center text-body-lg font-semibold text-on-surface pt-space-xs">
+<span>Total Grand Investment</span>
+<span>$105,435.50</span>
+</div>
+</div>
+<!-- Deposit Due Box -->
+<div class="p-space-md bg-secondary-container/30 rounded-xl flex items-center justify-between">
+<div>
+<span class="text-label-sm text-on-secondary-container uppercase tracking-wider block mb-0.5">Due Today (25% Deposit)</span>
+<span class="font-headline-md text-headline-md text-on-surface">Fully Secured</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-primary">$26,358.88</span>
+</div>
+<div class="mt-space-md flex items-center justify-center gap-space-xs text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+<span>Assigned Concierge: <strong>Jonathan Vance</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-body-sm"><div>© 2024 GrandVistas Banquets. All rights reserved.</div><div class="flex gap-space-md"><a class="hover:text-on-surface" href="#">Privacy Policy</a><a class="hover:text-on-surface" href="#">Terms of Service</a><a class="hover:text-on-surface" href="#">Concierge</a></div></div></footer></body></html>

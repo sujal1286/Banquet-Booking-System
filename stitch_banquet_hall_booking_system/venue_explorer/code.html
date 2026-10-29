@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "on-primary-fixed": "#072019",          "tertiary-fixed": "#ffdea5",          "on-error-container": "#93000a",          "surface-dim": "#dbdad6",          "on-secondary-fixed-variant": "#574500",          "tertiary-fixed-dim": "#e9c176",          "on-secondary-fixed": "#241a00",          "surface-container-lowest": "#ffffff",          "on-surface-variant": "#424845",          "background": "#fbf9f5",          "outline-variant": "#c2c8c4",          "primary-fixed-dim": "#b1cdc1",          "on-background": "#1b1c1a",          "on-tertiary-container": "#a3813e",          "secondary-fixed-dim": "#e9c349",          "outline": "#727975",          "on-tertiary-fixed-variant": "#5d4201",          "surface": "#fbf9f5",          "primary-container": "#0a231c",          "surface-variant": "#e4e2de",          "surface-container-high": "#eae8e4",          "on-secondary-container": "#745c00",          "secondary-container": "#fed65b",          "surface-container-highest": "#e4e2de",          "inverse-primary": "#b1cdc1",          "surface-bright": "#fbf9f5",          "on-error": "#ffffff",          "on-primary": "#ffffff",          "error-container": "#ffdad6",          "secondary-fixed": "#ffe088",          "on-primary-fixed-variant": "#334c43",          "tertiary-container": "#2a1c00",          "surface-container": "#efeeea",          "on-tertiary-fixed": "#261900",          "secondary": "#735c00",          "inverse-surface": "#30312e",          "error": "#ba1a1a",          "on-tertiary": "#ffffff",          "primary-fixed": "#cde9dd",          "on-surface": "#1b1c1a",          "on-secondary": "#ffffff",          "surface-container-low": "#f5f3ef",          "primary": "#000805",          "on-primary-container": "#728c82",          "inverse-on-surface": "#f2f0ed",          "tertiary": "#0a0500",          "surface-tint": "#4b645b"        },        "borderRadius": {          "DEFAULT": "0.125rem",          "lg": "0.25rem",          "xl": "0.5rem",          "full": "0.75rem"        },        "spacing": {          "margin": "3rem",          "space-sm": "0.75rem",          "gutter": "2rem",          "space-lg": "2.5rem",          "space-xs": "0.375rem",          "space-md": "1.5rem",          "space-xl": "4rem"        },        "fontFamily": {          "body-md": ["Inter"],          "headline-md": ["Newsreader"],          "headline-sm": ["Newsreader"],          "headline-lg": ["Newsreader"],          "label-sm": ["Inter"],          "headline-xl": ["Newsreader"],          "body-sm": ["Inter"],          "label-lg": ["Inter"],          "body-lg": ["Inter"]        },        "fontSize": {          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],          "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],          "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],          "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],          "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "300" }],          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]        }      }    }  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="GrandVistas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AQKDg3OT1aZ4sDFrzzS3NhTVfGHkBJgixWv8ck5PAwSgvfytFgCWHbMTe1PzHLZJT8B2wqVZUpSA3cyp12I7dallfPMzSrg2FUZU2ureH9HgUa1HBBEDBSR2Sy5Hz1N-nBQwGUu0L9esbfLi3d2uJz05t3GOnBUUNbVqxDl_lHZqPPxT7at-ihZwpMsW1_BWaU1UwRm362k4VUp7bSLPCMD2DpVk38wznKuPCZk"/><span class="text-headline-sm font-headline-sm text-on-surface tracking-tight">GrandVistas</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="venues" href="#">Venues</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="availability" href="#">Availability</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bookings" href="#">Bookings</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Immersive Hero Section -->
+<div class="relative w-full -mt-20 pt-32 pb-24 px-gutter bg-primary-container text-on-primary overflow-hidden">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center" data-alt="Cinematic wide shot of a luxurious grand banquet hall at twilight, illuminated by cascading crystal chandeliers, polished marble floors reflecting warm ambient light, opulent floral arrangements, and elegantly set tables with fine china. High-end architectural photography, warm golden and deep emerald tones, editorial aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnpVNDdmlpCkWZtz83U0QBOgz4ZRAk_hRgoJl_nOU9j66EVJaHyNRfOS-PrMrERWkRI9SezEBPpp7K-2kIQCD1PYpMp-CDH0H1J3DI5YhDCUPQFu5RATgUJts5bqBFcMdQ5EUmk6we2U0kV1-PsL-cCQOnkkgH0iL1yPgbESaV2CSA2Ms61eMQRDAUu4lrgCS4-qnGRn8FDHiyCeeIiVgNEmaK5AX61-GqWF2OgUY')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container via-primary-container/80 to-transparent"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col items-start gap-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface/10 backdrop-blur-md text-tertiary-fixed text-label-sm uppercase tracking-widest border border-outline/20">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+        Curated Prestigious Spaces
+      </div>
+<h1 class="font-headline-xl text-headline-xl max-w-3xl text-surface">
+        Bespoke Venues for Extraordinary Celebrations
+      </h1>
+<p class="font-body-lg text-body-lg text-surface-dim max-w-xl font-light">
+        Discover architectural masterpieces designed to host your most momentous occasions with peerless elegance and effortless grandeur.
+      </p>
+</div>
+<!-- Floating Search & Filter Bar -->
+<div class="relative max-w-7xl mx-auto mt-space-xl z-20">
+<div class="bg-surface/95 backdrop-blur-xl p-space-md rounded-xl shadow-2xl border border-outline/10 grid grid-cols-1 md:grid-cols-5 gap-space-sm items-center text-on-surface">
+<!-- Date Picker -->
+<div class="flex flex-col gap-space-xs px-space-sm py-2 hover:bg-surface-container rounded-lg transition-colors cursor-pointer">
+<label class="text-label-sm text-on-surface-variant uppercase">Event Date</label>
+<div class="flex items-center gap-space-xs font-label-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_today</span>
+<span>Oct 24, 2024</span>
+</div>
+</div>
+<!-- Guest Count -->
+<div class="flex flex-col gap-space-xs px-space-sm py-2 hover:bg-surface-container rounded-lg transition-colors cursor-pointer">
+<label class="text-label-sm text-on-surface-variant uppercase">Guest Capacity</label>
+<div class="flex items-center gap-space-xs font-label-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">group</span>
+<span>350 – 500 Guests</span>
+</div>
+</div>
+<!-- Hall Type -->
+<div class="flex flex-col gap-space-xs px-space-sm py-2 hover:bg-surface-container rounded-lg transition-colors cursor-pointer">
+<label class="text-label-sm text-on-surface-variant uppercase">Hall Type</label>
+<div class="flex items-center gap-space-xs font-label-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">domain</span>
+<span>Grand Ballroom</span>
+</div>
+</div>
+<!-- Price Range -->
+<div class="flex flex-col gap-space-xs px-space-sm py-2 hover:bg-surface-container rounded-lg transition-colors cursor-pointer">
+<label class="text-label-sm text-on-surface-variant uppercase">Investment</label>
+<div class="flex items-center gap-space-xs font-label-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span>$5,000+ / day</span>
+</div>
+</div>
+<!-- Action Button -->
+<div class="flex items-center justify-end p-2">
+<button class="w-full md:w-auto px-space-lg py-4 bg-primary text-on-primary font-label-lg rounded-lg hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Explore Halls</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Area: Venue Explorer -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+<!-- Filter Chips & Results Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="text-label-sm text-on-surface-variant uppercase tracking-widest">Portfolio</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Available Grand Halls</h2>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-md py-2 rounded-full bg-primary text-on-primary text-body-sm font-medium transition-all">All Spaces</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-body-sm transition-all">Ballrooms</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-body-sm transition-all">Garden Terraces</button>
+<button class="px-space-md py-2 rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest text-body-sm transition-all">Imperial Suites</button>
+</div>
+</div>
+<!-- Featured Grand Halls Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Venue Card 1 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Sovereign Grand Ballroom featuring soaring double-height gilded ceilings, monumental crystal chandeliers casting sparkling reflections, floor-to-ceiling arched windows draped in heavy silk velvet, and an immaculate inlaid parquet dance floor. High-end luxury banquet hall interior design with warm ivory and gold palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKpyxBC36hpocME0ODW9Ma0sPJFV6se3OBwoq0lqeJDAmwAJjoDF3DprESSQS01lrQpMOGMPAcSYsHFihsttZeCGd-nzOoghzRus64o5mIeTjcmRxaQoCvZrbxndpAgdoIG_5dM-aKSNpuUc8asFVF23NxgeGy2BbldMuPIkd0uUZWYpYP9KbqbJD1PZ24sgzTD1ZrKn3kwcCGT91ojIMnjjXbNq5MFKpJAVjSJ2g')"></div>
+<!-- Capacity Badge -->
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 800 Guests</span>
+</div>
+<!-- Price Tag Overlay -->
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $8,500
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Grand Ballroom</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (42 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">The Sovereign Ballroom</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              An architectural masterpiece designed for monumental galas, high-profile weddings, and lavish receptions featuring state-of-the-art acoustics and regal ornamentation.
+            </p>
+</div>
+<!-- Amenities Chips -->
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Valet Parking</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">AV Suite</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Bridal Suite</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Private Terrace</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Peak Dates Open</span>
+</div>
+<!-- PHP-Ready Action Button -->
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=sovereign_ballroom">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Venue Card 2 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Versailles Garden Conservatory featuring lush indoor botanical arrangements, delicate wrought-iron framework, natural sunlight pouring through vaulted glass ceilings, and sophisticated ambient lighting for romantic evening celebrations. Elegant garden banquet hall setup." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA8oet5FhLL0jsGcFNSrUrEDeoJwqalUFx3xYU286S5--vrHfeDWGW1TRAE_ZzyYPJZvfex5rcPolYfNhs9708ZGOkAS7U_h1_tyhtjcMwplxOYPDWpHjciYDOeU57s9Q9IzYpOfHvFw_9r2dqIgmliyF9yaE2eq7ahvVBTTvCsCwzpyqFrQjXDznaYUhpYib-tYR1j9zK1Fv4fJuq8eKqKCfRmZ2Hy9xqlMrImVbw')"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 350 Guests</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $5,200
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Garden Conservatory</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5.0 (28 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Versailles Conservatory</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              Immersed in lush greenery and bathed in natural light, this glasshouse venue offers an ethereal setting for enchanting daytime ceremonies and starry-night dinners.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Climate Controlled</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Open Air Option</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Sound System</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Limited Weekends</span>
+</div>
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=versailles_conservatory">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Venue Card 3 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Imperial Crown Hall showcasing dark mahogany wall panels, hand-woven Persian carpets, sleek modern gold-accented chandeliers, and sophisticated executive table arrangements. Luxury corporate and high-end banquet space." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAmgwlQIZKMpI7MdnvsdiXW11zsmo6QssaclA5lxbdFCsfRi5qGErGpk_GGplfAgrFWmIUPcQzJf7VvpvBHdYOupQ3PotJ5qX4Qiiq7hGlGg_u6bV7V4jQQcurDtZvuobeaOo4xmbM8BcowYwUUkAQaP7FZ2bENmCCXrwy-VcCXRjEPIAnSutABNY8Y2CG8of8GWyWH8iLP1yBoLg4lfyhdH8dwXfwoERVUWIol9IU')"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 500 Guests</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $6,800
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Imperial Suite</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8 (35 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Imperial Crown Hall</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              A sophisticated fusion of classic heritage and contemporary minimalism, tailored for upscale corporate symposiums, prestigious galas, and formal banquets.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Stage & Rigging</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">VIP Lounge</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Catering Prep</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Available This Month</span>
+</div>
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=imperial_crown_hall">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Venue Card 4 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Crystal Pavilion featuring avant-garde glass architecture, panoramic sunset views over manicured lawns, minimalist designer furnishings, and glowing minimalist pendant lighting. Ultra-modern luxury event venue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJXoIHkq9AMAvQqttvW5Qv3Pt-5I06Vob2BHJ3Ghtt5xjKrZcA5N00YdfocgUR69cwTuC6s6AJ1DhOe7Yl4RNsi1CK5TA9XoK6DF-CI_dF3VNEdN29kQMKnjxm_yx1IIp4uwlFV49h3lM8Ou8GZdQ_-svOdF4R9bqRnJ-JUiJQb-hEQmKuLXPoFduldwFvHiQMossan62SkCnJMmrrDdVEJE103yjKtRE_kIv-CP8')"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 250 Guests</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $4,500
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Modern Pavilion</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (19 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Crystal Pavilion</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              Sleek, architectural lines meet unobstructed horizon vistas. Perfect for intimate celebrations, avant-garde art shows, and contemporary high-fashion cocktail parties.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Panoramic Views</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Rooftop Access</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Fiber Wi-Fi</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Peak Dates Open</span>
+</div>
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=crystal_pavilion">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Venue Card 5 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Regal Heritage Hall showing restored historic brickwork mixed with sleek architectural brass accents, warm ambient uplighting, and vintage herringbone oak floors. Historic luxury banquet space." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXYnWiCswnukqA-1E5yylS1-3n97FINR9gB2f32rbj3OvBsGn6MCj3OE_A5nGbTXztV9kRLgo6kr7Jh_2smCAbqG_mOcBmrQOtKteIzGHf0R2iHEgBXNI5am49xKvlHsj53P_VTSXlKwLtswRB8WQbRvIBvHhY8N1Fpi7zndH-uTjE3CcEcRyKbHNidetXtEeg1Moh_fQoPTm2co-JDyOMY7EOIpLuBVtAGAQpGZU')"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 600 Guests</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $7,500
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Heritage Hall</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7 (51 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Regal Heritage Hall</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              A timeless blend of historic charm and modern engineering, boasting soaring timber-truss ceilings and rich architectural character for unforgettable gatherings.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Historic Charm</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Full Kitchen</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Green Room</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Bookings Open</span>
+</div>
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=regal_heritage_hall">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Venue Card 6 -->
+<div class="group flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="relative h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="The Azure Lagoon Banquet Hall overlooking a serene waterfront terrace with reflecting pools, ambient candlelit pathways, and magnificent neoclassical colonnades. Waterfront luxury event venue." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuiFYJp2-UE8qSQ3OVi1d9uziU2pphUgXfiOd-AqLzn7tPX6oB9_n0FXXfGfHNWQWjxFKnQ701OS2sLLONojAp-23OTFQDc_6jzKRH4kH6EbqbsdF9-_TC6ZlPRUDDD7aGANOm9jtAj4I5yhqoG6cs6NVhECbs8H3aYF-9OrUaVP2pqJM_sdAjQxjRrDxrDpLjzR9D8VcleDozvpQIOYN2CxtlIe3gNXJ2mCvqGw0')"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface/90 backdrop-blur-md text-on-surface text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">group</span>
+<span>Up to 700 Guests</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-lg shadow-md">
+            Starting at $9,000
+          </div>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm text-secondary uppercase font-semibold">Waterfront Estate</span>
+<div class="flex items-center gap-1 text-on-surface-variant text-body-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9 (64 reviews)</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">Azure Lagoon Estate</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">
+              Set along picturesque waterfront gardens, this majestic venue delivers dramatic twilight backdrops, private dock access, and palatial reception rooms.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Waterfront</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Helipad</span>
+<span class="px-2 py-1 rounded bg-surface-container text-on-surface-variant text-label-sm">Fireworks Permitted</span>
+</div>
+<div class="pt-space-sm border-t border-outline/10 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm text-on-surface-variant">Availability</span>
+<span class="text-body-sm font-semibold text-on-surface">Limited Availability</span>
+</div>
+<a class="px-space-md py-3 bg-secondary-container text-on-secondary-container font-label-lg rounded-lg hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-space-xs" href="venue_detail.php?id=azure_lagoon_estate">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Concierge Assistance Banner -->
+<div class="mt-space-xl bg-surface-container-high rounded-2xl p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="text-label-sm text-secondary uppercase tracking-widest font-semibold">Personalized Service</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">Need a Tailored Curation for Your Event?</h3>
+<p class="font-body-md text-on-surface-variant">
+          Our master event planners and dedicated concierges are available to arrange private private walkthroughs, custom floorplan design, and bespoke vendor alignments.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-4 bg-primary text-on-primary font-label-lg rounded-lg hover:bg-primary-container transition-all shadow-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Speak with Concierge</span>
+</button>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-body-sm"><div>© 2024 GrandVistas Banquets. All rights reserved.</div><div class="flex gap-space-md"><a class="hover:text-on-surface" href="#">Privacy Policy</a><a class="hover:text-on-surface" href="#">Terms of Service</a><a class="hover:text-on-surface" href="#">Concierge</a></div></div></footer></body></html>

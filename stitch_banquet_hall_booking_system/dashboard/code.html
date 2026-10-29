@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "on-primary-fixed": "#072019",          "tertiary-fixed": "#ffdea5",          "on-error-container": "#93000a",          "surface-dim": "#dbdad6",          "on-secondary-fixed-variant": "#574500",          "tertiary-fixed-dim": "#e9c176",          "on-secondary-fixed": "#241a00",          "surface-container-lowest": "#ffffff",          "on-surface-variant": "#424845",          "background": "#fbf9f5",          "outline-variant": "#c2c8c4",          "primary-fixed-dim": "#b1cdc1",          "on-background": "#1b1c1a",          "on-tertiary-container": "#a3813e",          "secondary-fixed-dim": "#e9c349",          "outline": "#727975",          "on-tertiary-fixed-variant": "#5d4201",          "surface": "#fbf9f5",          "primary-container": "#0a231c",          "surface-variant": "#e4e2de",          "surface-container-high": "#eae8e4",          "on-secondary-container": "#745c00",          "secondary-container": "#fed65b",          "surface-container-highest": "#e4e2de",          "inverse-primary": "#b1cdc1",          "surface-bright": "#fbf9f5",          "on-error": "#ffffff",          "on-primary": "#ffffff",          "error-container": "#ffdad6",          "secondary-fixed": "#ffe088",          "on-primary-fixed-variant": "#334c43",          "tertiary-container": "#2a1c00",          "surface-container": "#efeeea",          "on-tertiary-fixed": "#261900",          "secondary": "#735c00",          "inverse-surface": "#30312e",          "error": "#ba1a1a",          "on-tertiary": "#ffffff",          "primary-fixed": "#cde9dd",          "on-surface": "#1b1c1a",          "on-secondary": "#ffffff",          "surface-container-low": "#f5f3ef",          "primary": "#000805",          "on-primary-container": "#728c82",          "inverse-on-surface": "#f2f0ed",          "tertiary": "#0a0500",          "surface-tint": "#4b645b"        },        "borderRadius": {          "DEFAULT": "0.125rem",          "lg": "0.25rem",          "xl": "0.5rem",          "full": "0.75rem"        },        "spacing": {          "margin": "3rem",          "space-sm": "0.75rem",          "gutter": "2rem",          "space-lg": "2.5rem",          "space-xs": "0.375rem",          "space-md": "1.5rem",          "space-xl": "4rem"        },        "fontFamily": {          "body-md": ["Inter"],          "headline-md": ["Newsreader"],          "headline-sm": ["Newsreader"],          "headline-lg": ["Newsreader"],          "label-sm": ["Inter"],          "headline-xl": ["Newsreader"],          "body-sm": ["Inter"],          "label-lg": ["Inter"],          "body-lg": ["Inter"]        },        "fontSize": {          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],          "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],          "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],          "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],          "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "300" }],          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]        }      }    }  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Newsreader:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-md pb-space-md"><div class="px-gutter mb-space-lg flex items-center gap-space-sm"><img alt="GrandVistas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AQKDg3OT1aZ4sDFrzzS3NhTVfGHkBJgixWv8ck5PAwSgvfytFgCWHbMTe1PzHLZJT8B2wqVZUpSA3cyp12I7dallfPMzSrg2FUZU2ureH9HgUa1HBBEDBSR2Sy5Hz1N-nBQwGUu0L9esbfLi3d2uJz05t3GOnBUUNbVqxDl_lHZqPPxT7at-ihZwpMsW1_BWaU1UwRm362k4VUp7bSLPCMD2DpVk38wznKuPCZk"/><span class="text-headline-sm font-headline-sm text-primary">GrandVistas</span></div><nav class="flex-1 px-space-sm flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-space-sm">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="venues" href="#"><span class="material-symbols-outlined mr-space-sm">apartment</span>Venues</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="availability" href="#"><span class="material-symbols-outlined mr-space-sm">calendar_today</span>Availability</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bookings" href="#"><span class="material-symbols-outlined mr-space-sm">book_online</span>Bookings</a></nav></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-end px-gutter gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></header><main class="relative pt-20 bg-surface"><div class="flex flex-col w-full pb-20">
+<!-- Top Welcome & Status Bar -->
+<div class="px-gutter pt-space-lg pb-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-low">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="text-label-sm uppercase text-on-tertiary-container tracking-widest font-semibold">Concierge Portal</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+<span class="text-label-sm text-on-surface-variant">Client ID: #GV-8942</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-primary">Welcome back, Lady Eleanor.</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl text-label-lg transition-all flex items-center gap-space-xs shadow-sm">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Message Concierge</span>
+</button>
+<button class="px-space-md py-space-sm bg-primary text-on-primary hover:bg-on-primary-fixed rounded-xl text-label-lg transition-all flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Reservation</span>
+</button>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="px-gutter py-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Active Reservations & Timeline (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Metrics Overview Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-xs">
+<span class="text-label-sm uppercase text-on-surface-variant">Active Bookings</span>
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">apartment</span>
+</div>
+<div class="text-headline-md font-headline-md text-primary">3 Venues</div>
+</div>
+<div class="mt-space-sm pt-space-sm flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>All deposits cleared</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-xs">
+<span class="text-label-sm uppercase text-on-surface-variant">Next Gala Event</span>
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">event</span>
+</div>
+<div class="text-headline-md font-headline-md text-primary">Oct 24, 2025</div>
+</div>
+<div class="mt-space-sm pt-space-sm text-body-sm text-on-surface-variant truncate">
+            Grand Imperial Ballroom
+          </div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-space-xs">
+<span class="text-label-sm uppercase text-on-surface-variant">Pending Invoices</span>
+<span class="material-symbols-outlined text-on-primary-container text-[20px]">receipt_long</span>
+</div>
+<div class="text-headline-md font-headline-md text-primary">$4,250.00</div>
+</div>
+<div class="mt-space-sm pt-space-sm flex items-center gap-space-xs text-body-sm text-error">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Due in 5 days</span>
+</div>
+</div>
+</div>
+<!-- Active Reservations Section -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary">Active Banquet Reservations</h2>
+<p class="text-body-sm text-on-surface-variant">Manage your curated ballroom sessions and catering requirements.</p>
+</div>
+<span class="text-label-sm text-on-primary-container bg-surface-container px-space-sm py-space-xs rounded-full">Showing 3 Active</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Reservation Item 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row gap-space-md items-start md:items-center justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" data-alt="A grand luxury ballroom with crystal chandeliers, polished marble floors, and warm golden lighting set for an elite gala event." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8RJ5miAJ5qBBy0qcHuCj2iUQU9mypnEQUh2d3XV_WltbnYUqyX0_U3WJSQKuppLgcl2RSwZjjObu-j5xdh2_qFPLGBKCF6RvoqTp9UcvgFih7GW9tqdDs15FlwQLtuG_vp5qBOXRtYSSWIlzky8AGZ7QKvU-2UCHfVzn7HLDAgOzK-ht8fxVAQb1wf4DBqeNFelefowvoc7zFmcuxiZVTAFCbKI8-knVEZCfhP58')"></div>
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Confirmed</span>
+<span class="text-body-sm text-on-surface-variant">ID: #RES-7021</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">The Grand Imperial Ballroom</h3>
+<p class="text-body-sm text-on-surface-variant">October 24, 2025 • 6:00 PM - 12:00 AM • 250 Guests</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<a class="px-space-md py-space-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl text-label-sm flex items-center gap-space-xs transition-all shadow-sm" href="/generate_invoice.php?id=7021">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>PDF Invoice</span>
+</a>
+<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl text-label-sm hover:bg-on-primary-fixed transition-all flex items-center gap-space-xs" onclick="openModifyModal('RES-7021')">
+<span>Modify</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Reservation Item 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row gap-space-md items-start md:items-center justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" data-alt="An intimate rooftop terrace banquet setup overlooking a glittering city skyline at dusk with warm ambient fairy lights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2daKZIZ5BCL0NAlfnXVBhtEZZ6M4DQa9yKzLTqVbpRHngtlgsvavamjA6azzHNlZ4yJ4ODxNmQEhdMnUu1Ca1QAIaktp_HKHSGorv3fR-geMUS7W6J0FZTXkvMRiOjSdd-kzpMtVcaUWf4FEutvFF63m8d3UPx-_vrn0mMeQL3i83iKAO_lU63XLQLsTLiitZhXgZEUQon9DB4BcI37M9_lCk0gbyd7SSAH5dOfU')"></div>
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded">Confirmed</span>
+<span class="text-body-sm text-on-surface-variant">ID: #RES-7044</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Skyline Garden Terrace</h3>
+<p class="text-body-sm text-on-surface-variant">November 12, 2025 • 4:00 PM - 10:00 PM • 90 Guests</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<a class="px-space-md py-space-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl text-label-sm flex items-center gap-space-xs transition-all shadow-sm" href="/generate_invoice.php?id=7044">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>PDF Invoice</span>
+</a>
+<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl text-label-sm hover:bg-on-primary-fixed transition-all flex items-center gap-space-xs" onclick="openModifyModal('RES-7044')">
+<span>Modify</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Reservation Item 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row gap-space-md items-start md:items-center justify-between transition-all hover:bg-surface-container">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" data-alt="A sophisticated heritage conservatory hall filled with lush botanical plants, classical marble pillars, and golden chandeliers." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC15_VXwRv4oSL3Fo2W5B0amuCLo1KWeNbW3VRR7OxReI6iQbNJf5E4BL4NjI9oMOjtrPMPTvk29qv9sWZ3hS84jNih1qJwwczcsN3VidJXOrAm0j2qokHumuus1x09Fme6ThqTzoPE-nTZIlHVpIbtQrXuzBXvD2QpLbR1C2BwSjlaqiCF6cd1A3FThsFdw4AiPKXZvlgA33ZW3U9iBh-ldON1usyqmHSPAOPDSmQ')"></div>
+<div>
+<div class="flex items-center gap-space-sm mb-1">
+<span class="text-label-sm bg-error-container text-on-error-container px-2 py-0.5 rounded">Action Required</span>
+<span class="text-body-sm text-on-surface-variant">ID: #RES-7098</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">The Sovereign Conservatory</h3>
+<p class="text-body-sm text-on-surface-variant">December 03, 2025 • 7:00 PM - 11:00 PM • 120 Guests</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto justify-end">
+<a class="px-space-md py-space-sm bg-surface-container-lowest text-on-surface hover:bg-surface-container-high rounded-xl text-label-sm flex items-center gap-space-xs transition-all shadow-sm" href="/generate_invoice.php?id=7098">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>PDF Invoice</span>
+</a>
+<button class="px-space-md py-space-sm bg-primary text-on-primary rounded-xl text-label-sm hover:bg-on-primary-fixed transition-all flex items-center gap-space-xs" onclick="openModifyModal('RES-7098')">
+<span>Modify</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Event Timeline -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="text-headline-md font-headline-md text-primary mb-space-xs">Upcoming Event Timeline</h2>
+<p class="text-body-sm text-on-surface-variant mb-space-lg">Milestones and scheduling checkpoints for your next gala.</p>
+<div class="relative pl-6 space-y-space-lg before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-outline-variant">
+<!-- Timeline Item 1 -->
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-secondary border-4 border-surface-container-lowest"></span>
+<div class="text-label-sm text-secondary font-semibold uppercase">Completed • Sept 10, 2025</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mt-0.5">Menu & Wine Pairing Tasting</h3>
+<p class="text-body-sm text-on-surface-variant">Executed with Executive Chef Julian. 5-course menu locked.</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-secondary border-4 border-surface-container-lowest"></span>
+<div class="text-label-sm text-secondary font-semibold uppercase">Completed • Oct 01, 2025</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mt-0.5">Floor Plan & AV Setup Finalized</h3>
+<p class="text-body-sm text-on-surface-variant">Stage lighting and acoustic testing verified by technical director.</p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-primary border-4 border-surface-container-lowest animate-pulse"></span>
+<div class="text-label-sm text-on-tertiary-container font-semibold uppercase">Current Phase • Oct 18, 2025</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mt-0.5">Final Guest Seating Manifest Due</h3>
+<p class="text-body-sm text-on-surface-variant">Submit final dietary restrictions and table arrangements to concierge.</p>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative">
+<span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-outline-variant border-4 border-surface-container-lowest"></span>
+<div class="text-label-sm text-on-surface-variant uppercase">Upcoming • Oct 24, 2025</div>
+<h3 class="text-headline-sm font-headline-sm text-primary mt-0.5">Grand Gala Execution</h3>
+<p class="text-body-sm text-on-surface-variant">Doors open at 6:00 PM. Valet parking on standby.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Concierge Chat, Payment Status & Quick Actions (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Concierge Direct Widget -->
+<div class="bg-primary-container text-on-primary-container rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-40 h-40 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="text-label-sm uppercase tracking-widest text-secondary-fixed">Venue Concierge</span>
+<span class="flex items-center gap-1.5 text-body-sm text-primary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-ping"></span>
+              Online
+            </span>
+</div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-12 h-12 rounded-full bg-cover bg-center shrink-0 border border-secondary/30" data-alt="Portrait of a sophisticated male concierge in an immaculate bespoke tuxedo smiling warmly in a luxurious hotel lobby." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjYayo7fuQfHaS_bzXYr3J9DGGFIDF8-MDXyIloc1y-sA_f-sVR5mfVza90rPRsmWtN2yArjd1ONX8Z43zgpIczSdXSmK8Fv953l-cJlb9UB3fBpbR4Ke1ODtWx4uxOT3Z91UBbksXQo3lnwoK0rKJulCmB5YqcUBikwbEZ_3NGZgZvQv2nwyPUBLReejO-i3V6k60hwHUAfiBoSUKjsEi3E58zlZoVWXxleLj5HE')"></div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-primary">Alistair Vance</h3>
+<p class="text-body-sm text-primary-fixed-dim">Head Event Curator</p>
+</div>
+</div>
+<div class="bg-surface/10 rounded-xl p-space-sm mb-space-md text-on-primary text-body-sm italic">
+            "Good day, Lady Eleanor. I have reviewed your floral arrangement adjustments for the Grand Imperial. Everything is in motion."
+          </div>
+</div>
+<div class="flex flex-col gap-space-sm">
+<input class="w-full px-space-md py-space-sm bg-surface/10 rounded-xl text-on-primary placeholder:text-primary-fixed-dim border-0 focus:ring-1 focus:ring-secondary text-body-md outline-none" placeholder="Type a message to Alistair..." type="text"/>
+<button class="w-full py-space-sm bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed rounded-xl text-label-lg font-semibold transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Message</span>
+</button>
+</div>
+</div>
+<!-- Payment & Financial Status -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="text-headline-md font-headline-md text-primary mb-space-xs">Financial Ledger</h2>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Summary of deposits, balances, and security holds.</p>
+<div class="space-y-space-md">
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-xl">
+<div>
+<div class="text-label-sm text-on-surface font-semibold">Grand Imperial Deposit</div>
+<div class="text-body-sm text-on-surface-variant">Paid via Wire Transfer</div>
+</div>
+<div class="text-right">
+<div class="text-label-lg text-primary font-semibold">$12,500.00</div>
+<span class="text-label-sm text-secondary font-semibold bg-secondary-container px-2 py-0.5 rounded">Paid</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-xl">
+<div>
+<div class="text-label-sm text-on-surface font-semibold">Skyline Terrace Balance</div>
+<div class="text-body-sm text-on-surface-variant">Due Oct 20, 2025</div>
+</div>
+<div class="text-right">
+<div class="text-label-lg text-primary font-semibold">$4,250.00</div>
+<span class="text-label-sm text-error font-semibold bg-error-container px-2 py-0.5 rounded">Pending</span>
+</div>
+</div>
+<div class="flex justify-between items-center p-space-sm bg-surface-container-low rounded-xl">
+<div>
+<div class="text-label-sm text-on-surface font-semibold">Security Deposit Hold</div>
+<div class="text-body-sm text-on-surface-variant">Fully Refundable</div>
+</div>
+<div class="text-right">
+<div class="text-label-lg text-primary font-semibold">$2,000.00</div>
+<span class="text-label-sm text-on-primary-container font-semibold bg-surface-container px-2 py-0.5 rounded">Held</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl text-label-lg transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Manage Payment Methods</span>
+</button>
+</div>
+<!-- Quick Action Utilities -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="text-headline-md font-headline-md text-primary mb-space-xs">Quick Utilities</h2>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Instant tools for event management.</p>
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl flex flex-col items-center text-center transition-all group">
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-xs group-hover:scale-110 transition-transform">print</span>
+<span class="text-label-lg text-primary font-semibold">Batch Invoices</span>
+<span class="text-body-sm text-on-surface-variant mt-1">Export ZIP</span>
+</button>
+<button class="p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl flex flex-col items-center text-center transition-all group">
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-xs group-hover:scale-110 transition-transform">restaurant</span>
+<span class="text-label-lg text-primary font-semibold">Catering Menu</span>
+<span class="text-body-sm text-on-surface-variant mt-1">View PDF</span>
+</button>
+<button class="p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl flex flex-col items-center text-center transition-all group">
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-xs group-hover:scale-110 transition-transform">view_compact</span>
+<span class="text-label-lg text-primary font-semibold">Floor Plans</span>
+<span class="text-body-sm text-on-surface-variant mt-1">CAD & PDF</span>
+</button>
+<button class="p-space-md bg-surface-container-low hover:bg-surface-container rounded-xl flex flex-col items-center text-center transition-all group">
+<span class="material-symbols-outlined text-primary text-[28px] mb-space-xs group-hover:scale-110 transition-transform">security</span>
+<span class="text-label-lg text-primary font-semibold">Valet Passes</span>
+<span class="text-body-sm text-on-surface-variant mt-1">Generate QR</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Modification Modal (Hidden by default) -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300" id="modifyModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full mx-gutter p-space-lg shadow-xl transform scale-95 transition-transform duration-300" id="modifyModalContent">
+<div class="flex justify-between items-center mb-space-md">
+<div>
+<span class="text-label-sm text-secondary uppercase font-semibold">Curated Modification</span>
+<h3 class="text-headline-md font-headline-md text-primary" id="modalTitle">Modify Reservation #RES-7021</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-all" onclick="closeModifyModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-space-xs">Expected Guest Count</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low rounded-xl text-body-md text-on-surface outline-none focus:ring-1 focus:ring-secondary" type="number" value="250"/>
+</div>
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-space-xs">Catering Tier Adjustment</label>
+<select class="w-full px-space-md py-space-sm bg-surface-container-low rounded-xl text-body-md text-on-surface outline-none focus:ring-1 focus:ring-secondary">
+<option>Imperial 5-Course Gala Menu (Current)</option>
+<option>Royal Sovereign Tasting Menu</option>
+<option>Artisan Botanical Plant-Based Menu</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-space-xs">Special Concierge Requests</label>
+<textarea class="w-full px-space-md py-space-sm bg-surface-container-low rounded-xl text-body-md text-on-surface outline-none focus:ring-1 focus:ring-secondary" placeholder="Specify flower arrangements, security details, or VIP arrivals..." rows="3"></textarea>
+</div>
+</div>
+<div class="mt-space-lg flex justify-end gap-space-sm">
+<button class="px-space-md py-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-xl text-label-lg transition-all" onclick="closeModifyModal()">Cancel</button>
+<button class="px-space-md py-space-sm bg-primary text-on-primary hover:bg-on-primary-fixed rounded-xl text-label-lg transition-all" onclick="submitModification()">Save Requirements</button>
+</div>
+</div>
+</div>
+<script>
+    function openModifyModal(resId) {
+      const modal = document.getElementById('modifyModal');
+      const modalContent = document.getElementById('modifyModalContent');
+      document.getElementById('modalTitle').innerText = 'Modify Reservation #' + resId;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalContent.classList.remove('scale-95');
+      modalContent.classList.add('scale-100');
+    }
+
+    function closeModifyModal() {
+      const modal = document.getElementById('modifyModal');
+      const modalContent = document.getElementById('modifyModalContent');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalContent.classList.remove('scale-100');
+      modalContent.classList.add('scale-95');
+    }
+
+    function submitModification() {
+      alert('Event requirements updated successfully. The venue concierge has been notified.');
+      closeModifyModal();
+    }
+  </script>
+</div></main></div></body></html>

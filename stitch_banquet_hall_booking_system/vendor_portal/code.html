@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "on-primary-fixed": "#072019",          "tertiary-fixed": "#ffdea5",          "on-error-container": "#93000a",          "surface-dim": "#dbdad6",          "on-secondary-fixed-variant": "#574500",          "tertiary-fixed-dim": "#e9c176",          "on-secondary-fixed": "#241a00",          "surface-container-lowest": "#ffffff",          "on-surface-variant": "#424845",          "background": "#fbf9f5",          "outline-variant": "#c2c8c4",          "primary-fixed-dim": "#b1cdc1",          "on-background": "#1b1c1a",          "on-tertiary-container": "#a3813e",          "secondary-fixed-dim": "#e9c349",          "outline": "#727975",          "on-tertiary-fixed-variant": "#5d4201",          "surface": "#fbf9f5",          "primary-container": "#0a231c",          "surface-variant": "#e4e2de",          "surface-container-high": "#eae8e4",          "on-secondary-container": "#745c00",          "secondary-container": "#fed65b",          "surface-container-highest": "#e4e2de",          "inverse-primary": "#b1cdc1",          "surface-bright": "#fbf9f5",          "on-error": "#ffffff",          "on-primary": "#ffffff",          "error-container": "#ffdad6",          "secondary-fixed": "#ffe088",          "on-primary-fixed-variant": "#334c43",          "tertiary-container": "#2a1c00",          "surface-container": "#efeeea",          "on-tertiary-fixed": "#261900",          "secondary": "#735c00",          "inverse-surface": "#30312e",          "error": "#ba1a1a",          "on-tertiary": "#ffffff",          "primary-fixed": "#cde9dd",          "on-surface": "#1b1c1a",          "on-secondary": "#ffffff",          "surface-container-low": "#f5f3ef",          "primary": "#000805",          "on-primary-container": "#728c82",          "inverse-on-surface": "#f2f0ed",          "tertiary": "#0a0500",          "surface-tint": "#4b645b"        },        "borderRadius": {          "DEFAULT": "0.125rem",          "lg": "0.25rem",          "xl": "0.5rem",          "full": "0.75rem"        },        "spacing": {          "margin": "3rem",          "space-sm": "0.75rem",          "gutter": "2rem",          "space-lg": "2.5rem",          "space-xs": "0.375rem",          "space-md": "1.5rem",          "space-xl": "4rem"        },        "fontFamily": {          "body-md": ["Inter"],          "headline-md": ["Newsreader"],          "headline-sm": ["Newsreader"],          "headline-lg": ["Newsreader"],          "label-sm": ["Inter"],          "headline-xl": ["Newsreader"],          "body-sm": ["Inter"],          "label-lg": ["Inter"],          "body-lg": ["Inter"]        },        "fontSize": {          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],          "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],          "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],          "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],          "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "300" }],          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]        }      }    }  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Newsreader:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-md pb-space-md"><div class="px-gutter mb-space-lg flex items-center gap-space-sm"><img alt="GrandVistas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AQKDg3OT1aZ4sDFrzzS3NhTVfGHkBJgixWv8ck5PAwSgvfytFgCWHbMTe1PzHLZJT8B2wqVZUpSA3cyp12I7dallfPMzSrg2FUZU2ureH9HgUa1HBBEDBSR2Sy5Hz1N-nBQwGUu0L9esbfLi3d2uJz05t3GOnBUUNbVqxDl_lHZqPPxT7at-ihZwpMsW1_BWaU1UwRm362k4VUp7bSLPCMD2DpVk38wznKuPCZk"/><span class="text-headline-sm font-headline-sm text-primary">GrandVistas</span></div><nav class="flex-1 px-space-sm flex flex-col gap-space-xs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined mr-space-sm">dashboard</span>Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="venues" href="#"><span class="material-symbols-outlined mr-space-sm">apartment</span>Venues</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="availability" href="#"><span class="material-symbols-outlined mr-space-sm">calendar_today</span>Availability</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="bookings" href="#"><span class="material-symbols-outlined mr-space-sm">book_online</span>Bookings</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary-container font-semibold" data-path="vendor-portal" href="#"><span class="material-symbols-outlined mr-space-sm">storefront</span>Vendor Portal</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="list-your-venue" href="#"><span class="material-symbols-outlined mr-space-sm">add_business</span>List Your Venue</a></nav></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-end px-gutter gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></header><main class="relative pt-20 bg-surface"><div class="flex flex-col w-full bg-surface text-on-surface pb-space-xl">
+<!-- Top Banner -->
+<div class="w-full bg-primary-container text-on-primary-container px-gutter py-space-md flex flex-col md:flex-row justify-between items-start md:items-center gap-space-sm shadow-sm">
+<div class="flex flex-col">
+<span class="text-label-sm uppercase tracking-widest text-primary-fixed-dim">Vendor Portal • Grand Imperial Ballroom</span>
+<h1 class="font-headline-lg text-headline-lg text-surface">Exclusive Admin Dashboard</h1>
+</div>
+<div class="flex items-center gap-space-sm bg-surface/10 px-space-md py-space-xs rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="text-label-sm text-surface">Live Synchronization Active</span>
+</div>
+</div>
+<div class="px-gutter pt-space-lg flex flex-col gap-space-xl">
+<!-- Executive Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex justify-between items-start">
+<span class="text-label-sm uppercase text-on-surface-variant">Total Monthly Revenue</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-primary">$42,500</span>
+<div class="flex items-center gap-1 text-label-sm text-on-primary-container mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12% from last month
+          </div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex justify-between items-start">
+<span class="text-label-sm uppercase text-on-surface-variant">Active Bookings</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">event_available</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-primary">12</span>
+<div class="flex items-center gap-1 text-label-sm text-on-surface-variant mt-1">
+            Confirmed for current cycle
+          </div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex justify-between items-start">
+<span class="text-label-sm uppercase text-on-surface-variant">Occupancy Rate</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">donut_large</span>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-primary">88%</span>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex justify-between items-start">
+<span class="text-label-sm uppercase text-on-surface-variant">Pending Client Requests</span>
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<div class="mt-space-md flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-primary">2</span>
+<span class="text-label-sm px-2 py-0.5 bg-error-container text-on-error-container rounded-full">Requires Action</span>
+</div>
+</div>
+</div>
+<!-- Two Column Layout: Reservation Management & Pricing Controls / Calendar -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Left 2 Cols: Reservation Table -->
+<div class="lg:col-span-2 flex flex-col gap-space-md">
+<div class="flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md text-primary">Reservation Management</h2>
+<div class="flex gap-2">
+<button class="px-space-sm py-space-xs text-label-sm rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all">All</button>
+<button class="px-space-sm py-space-xs text-label-sm rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all">Pending</button>
+<button class="px-space-sm py-space-xs text-label-sm rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high transition-all">Confirmed</button>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant text-label-sm uppercase tracking-wider">
+<th class="p-space-md">Client / Event</th>
+<th class="p-space-md">Date &amp; Time</th>
+<th class="p-space-md">Guests</th>
+<th class="p-space-md">Status</th>
+<th class="p-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-space-md">
+<div class="font-medium text-on-surface">Eleanor Vance</div>
+<div class="text-body-sm text-on-surface-variant">Vance Wedding Reception</div>
+</td>
+<td class="p-space-md">
+<div class="text-body-md">Oct 24, 2024</div>
+<div class="text-body-sm text-on-surface-variant">18:00 - 23:00</div>
+</td>
+<td class="p-space-md">
+<span class="text-body-md font-medium">350</span>
+</td>
+<td class="p-space-md">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm bg-secondary-container text-on-secondary-container">Pending Review</span>
+</td>
+<td class="p-space-md text-right space-x-2">
+<button class="px-3 py-1 bg-primary text-on-primary text-label-sm rounded-lg hover:opacity-90 transition-all">Approve</button>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface text-label-sm rounded-lg hover:bg-surface-container-highest transition-all">Modify</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-space-md">
+<div class="font-medium text-on-surface">Alistair Sterling</div>
+<div class="text-body-sm text-on-surface-variant">Sterling Corp Gala</div>
+</td>
+<td class="p-space-md">
+<div class="text-body-md">Nov 02, 2024</div>
+<div class="text-body-sm text-on-surface-variant">19:00 - 00:00</div>
+</td>
+<td class="p-space-md">
+<span class="text-body-md font-medium">500</span>
+</td>
+<td class="p-space-md">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm bg-primary-fixed text-on-primary-fixed">Confirmed</span>
+</td>
+<td class="p-space-md text-right space-x-2">
+<button class="px-3 py-1 bg-primary text-on-primary text-label-sm rounded-lg hover:opacity-90 transition-all" disabled="">Approved</button>
+<button class="px-3 py-1 bg-surface-container-high text-on-surface text-label-sm rounded-lg hover:bg-surface-container-highest transition-all">Modify</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-space-md">
+<div class="font-medium text-on-surface">Sophia Laurent</div>
+<div class="text-body-sm text-on-surface-variant">Laurent Milestone Birthday</div>
+</td>
+<td class="p-space-md">
+<div class="text-body-md">Nov 15, 2024</div>
+<div class="text-body-sm text-on-surface-variant">17:00 - 22:00</div>
+</td>
+<td class="p-space-md">
+<span class="text-body-md font-medium">200</span>
+</td>
+<td class="p-space-md">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-label-sm bg-surface-container-high text-on-surface-variant">Completed</span>
+</td>
+<td class="p-space-md text-right space-x-2">
+<button class="px-3 py-1 bg-surface-container-high text-on-surface text-label-sm rounded-lg hover:bg-surface-container-highest transition-all">View Log</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right 1 Col: Pricing & Peak Rate Controls -->
+<div class="flex flex-col gap-space-md">
+<h2 class="font-headline-md text-headline-md text-primary">Rate &amp; Surcharge Controls</h2>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<div class="font-medium text-on-surface">Peak Weekend Rates</div>
+<div class="text-body-sm text-on-surface-variant">+25% on Fri/Sat evenings</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-medium text-on-surface">Holiday Surcharges</div>
+<div class="text-body-sm text-on-surface-variant">Auto-apply for national holidays</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<div class="font-medium text-on-surface">Custom Catering Surcharges</div>
+<div class="text-body-sm text-on-surface-variant">External vendor fee implementation</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="pt-2">
+<button class="w-full py-2 bg-secondary text-on-secondary text-label-sm font-semibold rounded-lg hover:opacity-90 transition-all">Update Rate Matrix</button>
+</div>
+</div>
+<!-- Direct Client Communication Log Preview -->
+<div class="flex flex-col gap-space-sm mt-space-md">
+<div class="flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm text-primary">Direct Client Log</h3>
+<span class="text-label-sm text-secondary cursor-pointer">View All (5)</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-3 shadow-sm">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container font-semibold text-sm">EV</div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-medium text-sm text-on-surface">Eleanor Vance</span>
+<span class="text-[11px] text-on-surface-variant">10:42 AM</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1 line-clamp-1">Can we arrange an extra hour for sound check before the ceremony?</p>
+</div>
+</div>
+<div class="flex items-start gap-3 pt-2 border-t border-outline-variant/10">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-semibold text-sm">AS</div>
+<div class="flex-1">
+<div class="flex justify-between items-center">
+<span class="font-medium text-sm text-on-surface">Alistair Sterling</span>
+<span class="text-[11px] text-on-surface-variant">Yesterday</span>
+</div>
+<p class="text-body-sm text-on-surface-variant mt-1 line-clamp-1">Catering headcount updated to 500 total guests. Invoice adjusted?</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Availability Calendar & Blackout Date Manager -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Live Availability Calendar &amp; Blackouts</h2>
+<p class="text-body-sm text-on-surface-variant">Click dates to toggle between Booked, Available, and Maintenance Mode.</p>
+</div>
+<div class="flex items-center gap-4 text-label-sm">
+<div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-secondary"></span> Available</div>
+<div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-primary"></span> Booked</div>
+<div class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-error"></span> Maintenance</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex justify-between items-center mb-space-md">
+<span class="font-headline-sm text-headline-sm text-primary">October 2024</span>
+<div class="flex gap-2">
+<button class="p-1 rounded-lg bg-surface-container-high hover:bg-surface-container-highest"><span class="material-symbols-outlined text-[18px]">chevron_left</span></button>
+<button class="p-1 rounded-lg bg-surface-container-high hover:bg-surface-container-highest"><span class="material-symbols-outlined text-[18px]">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center">
+<div class="text-label-sm text-on-surface-variant py-2">Mon</div>
+<div class="text-label-sm text-on-surface-variant py-2">Tue</div>
+<div class="text-label-sm text-on-surface-variant py-2">Wed</div>
+<div class="text-label-sm text-on-surface-variant py-2">Thu</div>
+<div class="text-label-sm text-on-surface-variant py-2">Fri</div>
+<div class="text-label-sm text-on-surface-variant py-2">Sat</div>
+<div class="text-label-sm text-on-surface-variant py-2">Sun</div>
+<!-- Calendar Days -->
+<div class="aspect-square bg-surface-container-high rounded-lg flex flex-col items-center justify-center text-on-surface-variant/40">30</div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">1</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">2</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">3</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">4</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">5</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">6</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">7</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">8</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">9</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">10</span></div>
+<div class="aspect-square bg-error text-on-error rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">11</span><span class="text-[9px] opacity-75">Maint</span></div>
+<div class="aspect-square bg-secondary text-on-secondary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">12</span><span class="text-[9px] opacity-75">Open</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">13</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">14</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">15</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">16</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">17</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">18</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">19</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">20</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">21</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">22</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">23</span></div>
+<div class="aspect-square bg-secondary text-on-secondary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">24</span><span class="text-[9px] opacity-75">Req</span></div>
+<div class="aspect-square bg-surface-container rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-surface-container-high"><span class="text-sm font-medium">25</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">26</span><span class="text-[9px] opacity-75">Booked</span></div>
+<div class="aspect-square bg-primary text-on-primary rounded-lg flex flex-col items-center justify-center cursor-pointer"><span class="text-sm font-medium">27</span><span class="text-[9px] opacity-75">Booked</span></div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

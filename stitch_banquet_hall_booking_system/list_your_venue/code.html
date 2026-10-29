@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">  tailwind.config = {    darkMode: "class",    theme: {      extend: {        "colors": {          "on-primary-fixed": "#072019",          "tertiary-fixed": "#ffdea5",          "on-error-container": "#93000a",          "surface-dim": "#dbdad6",          "on-secondary-fixed-variant": "#574500",          "tertiary-fixed-dim": "#e9c176",          "on-secondary-fixed": "#241a00",          "surface-container-lowest": "#ffffff",          "on-surface-variant": "#424845",          "background": "#fbf9f5",          "outline-variant": "#c2c8c4",          "primary-fixed-dim": "#b1cdc1",          "on-background": "#1b1c1a",          "on-tertiary-container": "#a3813e",          "secondary-fixed-dim": "#e9c349",          "outline": "#727975",          "on-tertiary-fixed-variant": "#5d4201",          "surface": "#fbf9f5",          "primary-container": "#0a231c",          "surface-variant": "#e4e2de",          "surface-container-high": "#eae8e4",          "on-secondary-container": "#745c00",          "secondary-container": "#fed65b",          "surface-container-highest": "#e4e2de",          "inverse-primary": "#b1cdc1",          "surface-bright": "#fbf9f5",          "on-error": "#ffffff",          "on-primary": "#ffffff",          "error-container": "#ffdad6",          "secondary-fixed": "#ffe088",          "on-primary-fixed-variant": "#334c43",          "tertiary-container": "#2a1c00",          "surface-container": "#efeeea",          "on-tertiary-fixed": "#261900",          "secondary": "#735c00",          "inverse-surface": "#30312e",          "error": "#ba1a1a",          "on-tertiary": "#ffffff",          "primary-fixed": "#cde9dd",          "on-surface": "#1b1c1a",          "on-secondary": "#ffffff",          "surface-container-low": "#f5f3ef",          "primary": "#000805",          "on-primary-container": "#728c82",          "inverse-on-surface": "#f2f0ed",          "tertiary": "#0a0500",          "surface-tint": "#4b645b"        },        "borderRadius": {          "DEFAULT": "0.125rem",          "lg": "0.25rem",          "xl": "0.5rem",          "full": "0.75rem"        },        "spacing": {          "margin": "3rem",          "space-sm": "0.75rem",          "gutter": "2rem",          "space-lg": "2.5rem",          "space-xs": "0.375rem",          "space-md": "1.5rem",          "space-xl": "4rem"        },        "fontFamily": {          "body-md": ["Inter"],          "headline-md": ["Newsreader"],          "headline-sm": ["Newsreader"],          "headline-lg": ["Newsreader"],          "label-sm": ["Inter"],          "headline-xl": ["Newsreader"],          "body-sm": ["Inter"],          "label-lg": ["Inter"],          "body-lg": ["Inter"]        },        "fontSize": {          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],          "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "400" }],          "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "500" }],          "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],          "label-sm": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],          "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "300" }],          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],          "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]        }      }    }  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Newsreader:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="GrandVistas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7AQKDg3OT1aZ4sDFrzzS3NhTVfGHkBJgixWv8ck5PAwSgvfytFgCWHbMTe1PzHLZJT8B2wqVZUpSA3cyp12I7dallfPMzSrg2FUZU2ureH9HgUa1HBBEDBSR2Sy5Hz1N-nBQwGUu0L9esbfLi3d2uJz05t3GOnBUUNbVqxDl_lHZqPPxT7at-ihZwpMsW1_BWaU1UwRm362k4VUp7bSLPCMD2DpVk38wznKuPCZk"/><span class="text-headline-sm font-headline-sm text-on-surface tracking-tight">GrandVistas</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="venues" href="#">Venues</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="availability" href="#">Availability</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="bookings" href="#">Bookings</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="vendor-portal" href="#">Vendor Portal</a><a aria-current="page" class="transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="list-your-venue" href="#">List Your Venue</a></nav><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="relative w-full bg-primary text-on-primary py-space-xl px-gutter overflow-hidden">
+<div class="absolute inset-0 opacity-15 bg-cover bg-center pointer-events-none mix-blend-overlay" data-alt="A grand luxury banquet hall with towering crystal chandeliers, polished marble floors, and champagne-toned draping under warm ambient architectural lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB720XlG8Ms4C8THNB0xx75WPXTuklNFP5_fZQV0ErU2E-qb4eAPD0nHOr4RwfhAhXXtdDh4BPD3e30aI7TQGeoi22jlbFJO61AKODaoK9MTKVYd1NQNYCUJ-6qxsIfbQ3WWc0tb07REAgS1aDCR4zpHTiN3QRiC54Z4qbXG-Cr5S3BBmLg2I7EXNbB3t13rPw452cArIcHILlw-MaYHdW3jOyFvNk2irfNoIOTG-8')"></div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row items-start md:items-end justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary-fixed-dim text-label-sm uppercase tracking-widest mb-space-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> Vendor Onboarding Portal
+        </div>
+<h1 class="font-headline-xl text-on-primary tracking-tight mb-space-md">
+          Partner with GrandVistas — Showcase Your Architectural Masterpiece to Elite Clienteles
+        </h1>
+<p class="text-body-lg text-primary-fixed-dim font-body-md max-w-2xl">
+          Join an exclusive curation of the world’s most prestigious banquet halls and event spaces. Connect directly with high-net-worth hosts, corporate innovators, and luxury wedding planners.
+        </p>
+</div>
+<div class="flex flex-col items-start md:items-end gap-space-xs text-secondary-fixed">
+<span class="text-label-sm uppercase tracking-widest text-secondary-fixed-dim">Concierge Support</span>
+<span class="font-headline-md text-on-primary">+1 (800) 555-GRAND</span>
+<span class="text-body-sm text-primary-fixed-dim">partners@grandvistas.com</span>
+</div>
+</div>
+</section>
+<!-- Main Content & Sidebar Layout -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Multi-Step Registration Form (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<!-- Step Progress Indicator -->
+<div class="flex items-center justify-between mb-space-lg pb-space-md" style="border-bottom: 1px solid rgba(212, 175, 55, 0.15);">
+<div class="flex items-center gap-space-sm step-indicator" data-step="1">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-lg step-badge">1</div>
+<span class="text-label-lg font-medium text-on-surface hidden sm:inline">Ownership</span>
+</div>
+<div class="h-[1px] flex-1 bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-space-sm step-indicator" data-step="2">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-lg step-badge">2</div>
+<span class="text-label-lg font-medium text-on-surface-variant hidden sm:inline">Specs</span>
+</div>
+<div class="h-[1px] flex-1 bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-space-sm step-indicator" data-step="3">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-lg step-badge">3</div>
+<span class="text-label-lg font-medium text-on-surface-variant hidden sm:inline">Pricing</span>
+</div>
+<div class="h-[1px] flex-1 bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-space-sm step-indicator" data-step="4">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-lg step-badge">4</div>
+<span class="text-label-lg font-medium text-on-surface-variant hidden sm:inline">Amenities</span>
+</div>
+<div class="h-[1px] flex-1 bg-outline-variant/30 mx-2"></div>
+<div class="flex items-center gap-space-sm step-indicator" data-step="5">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-lg step-badge">5</div>
+<span class="text-label-lg font-medium text-on-surface-variant hidden sm:inline">Gallery</span>
+</div>
+</div>
+<form action="process_vendor_registration.php" class="space-y-space-lg" id="vendorOnboardingForm" method="POST">
+<!-- STEP 1: Venue & Ownership Details -->
+<div class="form-step space-y-space-md" data-step-content="1">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-on-surface">1. Venue &amp; Ownership Details</h2>
+<p class="text-body-md text-on-surface-variant">Provide the legal credentials and foundational identity of your establishment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Hall / Venue Name</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="hall_name" placeholder="e.g., The Grand Crystal Ballroom" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Legal Business Name</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="legal_business_name" placeholder="e.g., GrandVistas Hospitality LLC" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Owner Full Name</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="owner_name" placeholder="e.g., Lord Alexander Sterling" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Business Email</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="business_email" placeholder="concierge@crystalballroom.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Direct Phone</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="direct_phone" placeholder="+1 (555) 234-5678" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Tax ID / Operating License</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="tax_id" placeholder="EIN-98-7654321" required="" type="text"/>
+</div>
+</div>
+<div class="flex justify-end pt-space-md">
+<button class="bg-primary text-on-primary px-space-lg py-3 rounded-lg font-label-lg hover:bg-primary-container transition-all flex items-center gap-space-xs" onclick="nextStep(2)" type="button">
+                Continue to Specifications <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: Specifications & Capacity -->
+<div class="form-step hidden space-y-space-md" data-step-content="2">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-on-surface">2. Specifications &amp; Capacity</h2>
+<p class="text-body-md text-on-surface-variant">Define the physical scale and dimensional grandeur of your event spaces.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Max Guest Capacity</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="max_capacity" placeholder="e.g., 750" required="" type="number"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Square Footage (sq ft)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="square_footage" placeholder="e.g., 12500" required="" type="number"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Ceiling Height (ft)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="ceiling_height" placeholder="e.g., 28" required="" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Indoor / Outdoor Designation</label>
+<div class="grid grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-xs p-space-md bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input checked="" class="text-primary focus:ring-secondary" name="venue_type" type="radio" value="Indoor Grand Ballroom"/>
+<span class="text-body-md font-medium">Indoor Ballroom</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-md bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="text-primary focus:ring-secondary" name="venue_type" type="radio" value="Outdoor Estate Gardens"/>
+<span class="text-body-md font-medium">Estate Gardens</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-md bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="text-primary focus:ring-secondary" name="venue_type" type="radio" value="Hybrid Rooftop Pavilion"/>
+<span class="text-body-md font-medium">Hybrid Rooftop</span>
+</label>
+</div>
+</div>
+<div class="flex justify-between pt-space-md">
+<button class="bg-surface-variant text-on-surface-variant px-space-lg py-3 rounded-lg font-label-lg hover:bg-surface-dim transition-all" onclick="prevStep(1)" type="button">
+                Back
+              </button>
+<button class="bg-primary text-on-primary px-space-lg py-3 rounded-lg font-label-lg hover:bg-primary-container transition-all flex items-center gap-space-xs" onclick="nextStep(3)" type="button">
+                Continue to Pricing <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 3: Investment & Peak Pricing -->
+<div class="form-step hidden space-y-space-md" data-step-content="3">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-on-surface">3. Investment &amp; Peak Pricing</h2>
+<p class="text-body-md text-on-surface-variant">Set your baseline rental structures and financial security requirements.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Base Rental Rate ($)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="base_rental_rate" placeholder="5000" required="" type="number"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Peak Weekend Rate ($)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="peak_weekend_rate" placeholder="12500" required="" type="number"/>
+</div>
+<div>
+<label class="block text-label-lg text-on-surface mb-space-xs">Security Deposit ($)</label>
+<input class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="security_deposit" placeholder="2500" required="" type="number"/>
+</div>
+</div>
+<div class="p-space-md bg-secondary-container/10 rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">info</span>
+<p class="text-body-sm text-on-surface-variant">Peak rates apply to Friday evenings, Saturdays, and nationally recognized holidays. Rates are subject to GrandVistas luxury tier auditing.</p>
+</div>
+<div class="flex justify-between pt-space-md">
+<button class="bg-surface-variant text-on-surface-variant px-space-lg py-3 rounded-lg font-label-lg hover:bg-surface-dim transition-all" onclick="prevStep(2)" type="button">
+                Back
+              </button>
+<button class="bg-primary text-on-primary px-space-lg py-3 rounded-lg font-label-lg hover:bg-primary-container transition-all flex items-center gap-space-xs" onclick="nextStep(4)" type="button">
+                Continue to Amenities <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 4: Amenities & Culinary Options -->
+<div class="form-step hidden space-y-space-md" data-step-content="4">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-on-surface">4. Amenities &amp; Culinary Options</h2>
+<p class="text-body-md text-on-surface-variant">Select the luxury features and gastronomic capabilities available on-site.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="Valet Parking"/>
+<span class="text-body-md">Valet Parking</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="Bridal Suite"/>
+<span class="text-body-md">Bridal Suite</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="AV &amp; Lighting Suite"/>
+<span class="text-body-md">AV &amp; Lighting Suite</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="Commercial Kitchen"/>
+<span class="text-body-md">Full Kitchen</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="Waterfront View"/>
+<span class="text-body-md">Waterfront View</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-all">
+<input class="rounded text-primary focus:ring-secondary w-5 h-5" name="amenities[]" type="checkbox" value="Helipad Access"/>
+<span class="text-body-md">Helipad Access</span>
+</label>
+</div>
+<div class="pt-space-sm">
+<label class="block text-label-lg text-on-surface mb-space-xs">Catering Tier Options</label>
+<select class="w-full bg-surface-container-low text-on-surface px-space-md py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" name="catering_tier">
+<option value="in_house_exclusive">In-House Michelin Star Culinary Team</option>
+<option value="preferred_partners">Curated List of Preferred Catering Partners</option>
+<option value="open_external">Open to External Licensed Caterers</option>
+</select>
+</div>
+<div class="flex justify-between pt-space-md">
+<button class="bg-surface-variant text-on-surface-variant px-space-lg py-3 rounded-lg font-label-lg hover:bg-surface-dim transition-all" onclick="prevStep(3)" type="button">
+                Back
+              </button>
+<button class="bg-primary text-on-primary px-space-lg py-3 rounded-lg font-label-lg hover:bg-primary-container transition-all flex items-center gap-space-xs" onclick="nextStep(5)" type="button">
+                Continue to Gallery <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 5: High-Resolution Photo Upload -->
+<div class="form-step hidden space-y-space-md" data-step-content="5">
+<div class="mb-space-md">
+<h2 class="font-headline-md text-on-surface">5. Grand Hall Gallery Upload</h2>
+<p class="text-body-md text-on-surface-variant">Upload ultra-high-definition architectural photography to feature in our global lookbook.</p>
+</div>
+<div class="border-2 border-dashed border-outline-variant/60 rounded-xl p-space-xl text-center bg-surface-container-low hover:border-secondary transition-all cursor-pointer relative">
+<input accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full" multiple="" name="venue_gallery[]" type="file"/>
+<div class="flex flex-col items-center justify-center gap-space-sm">
+<div class="w-16 h-16 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<div>
+<p class="text-label-lg text-on-surface">Drag &amp; drop high-res imagery here, or <span class="text-secondary underline">browse files</span></p>
+<p class="text-body-sm text-on-surface-variant mt-1">Supports RAW, TIFF, PNG, JPG up to 50MB per photograph (Minimum 4K resolution recommended)</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<input class="rounded text-primary focus:ring-secondary w-4 h-4" id="terms_agree" required="" type="checkbox"/>
+<label class="text-body-sm text-on-surface-variant" for="terms_agree">I certify that I am the authorized owner or legal representative of this venue and agree to GrandVistas <a class="underline text-on-surface" href="#">Vendor Terms of Service</a> and <a class="underline text-on-surface" href="#">Commission Agreement</a>.</label>
+</div>
+<div class="flex justify-between pt-space-md">
+<button class="bg-surface-variant text-on-surface-variant px-space-lg py-3 rounded-lg font-label-lg hover:bg-surface-dim transition-all" onclick="prevStep(4)" type="button">
+                Back
+              </button>
+<button class="bg-secondary text-on-secondary-fixed px-space-xl py-3 rounded-lg font-label-lg hover:bg-secondary-container transition-all flex items-center gap-space-xs shadow-lg" type="submit">
+<span class="material-symbols-outlined text-[18px]">verified_user</span> Submit Venue Onboarding
+              </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Professional Summary Sidebar (4 Cols) -->
+<div class="lg:col-span-4 space-y-space-md">
+<!-- Commission Structure Card -->
+<div class="bg-primary text-on-primary rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-xs text-secondary-fixed mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">percent</span>
+<span class="text-label-sm uppercase tracking-widest text-secondary-fixed-dim">Revenue Model</span>
+</div>
+<h3 class="font-headline-md text-on-primary mb-space-sm">The 85/15 Partner Split</h3>
+<p class="text-body-md text-primary-fixed-dim mb-space-md">
+            We champion our venue partners. You retain <strong class="text-on-primary font-semibold">85%</strong> of all gross booking revenues. GrandVistas retains a transparent <strong class="text-on-primary font-semibold">15%</strong> concierge and acquisition fee covering global marketing, secure escrow, and VIP client acquisition.
+          </p>
+<div class="p-space-md bg-surface/5 rounded-lg flex items-center justify-between">
+<span class="text-body-sm text-primary-fixed-dim">Zero upfront listing fees</span>
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+</div>
+</div>
+<!-- Dedicated Concierge Assignment Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-xl">
+<div class="flex items-center gap-space-xs text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+<span class="text-label-sm uppercase tracking-widest text-on-surface-variant">White-Glove Support</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-space-sm">Dedicated Concierge</h3>
+<p class="text-body-md text-on-surface-variant mb-space-md">
+            Upon onboarding submission, a senior venue relationship director is assigned exclusively to your property to assist with floorplan digitization, pricing calibration, and high-net-worth introductions.
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-cover bg-center" data-alt="Portrait of an elegant female hospitality executive in a bespoke emerald suit with a warm welcoming expression." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLRhQEtF0AF_3EBe19efYB3uR1ioGfEozbYSOA0prB7wWaFTlT81mMgO1StLCIhWt398gA4LUCAf5mYxS9V7cv3Zaa4iVQxPrHn7KcRAQjwzNSecrZnnPIDBzS9V2NYpwgN20QSiidcSDFydL7lalY6I9vqy5vSEtI-1pjNJ-DWCqGpcCO8Nf31hQ8Vum7xN0rKIT1gzIwCFC_VSC-rOYSahwQRjw8SswMa7CrQd8')"></div>
+<div>
+<div class="text-label-lg font-medium text-on-surface">Eleanor Vance</div>
+<div class="text-body-sm text-on-surface-variant">Head of Global Venue Acquisitions</div>
+</div>
+</div>
+</div>
+<!-- Verification Process Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-xl">
+<div class="flex items-center gap-space-xs text-secondary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+<span class="text-label-sm uppercase tracking-widest text-on-surface-variant">Security &amp; Standards</span>
+</div>
+<h3 class="font-headline-md text-on-surface mb-space-sm">The Verification Protocol</h3>
+<ul class="space-y-space-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-1">task_alt</span>
+<span>Legal identity &amp; operating license audit (24-48 hours)</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-1">task_alt</span>
+<span>Architectural quality &amp; photo validation</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-1">task_alt</span>
+<span>Escrow banking setup for instant payout execution</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Step Controller Script -->
+<script>
+    function nextStep(stepNum) {
+      // Hide all steps
+      const steps = document.querySelectorAll('.form-step');
+      steps.forEach(s => s.classList.add('hidden'));
+
+      // Show target step
+      const targetStep = document.querySelector(`[data-step-content="${stepNum}"]`);
+      if (targetStep) {
+        targetStep.classList.remove('hidden');
+      }
+
+      // Update indicators
+      const indicators = document.querySelectorAll('.step-indicator');
+      indicators.forEach(ind => {
+        const badge = ind.querySelector('.step-badge');
+        const label = ind.querySelector('span:not(.step-badge)');
+        const s = parseInt(ind.getAttribute('data-step'));
+        
+        if (s <= stepNum) {
+          badge.classList.remove('bg-surface-variant', 'text-on-surface-variant');
+          badge.classList.add('bg-primary', 'text-on-primary');
+          if (label) {
+            label.classList.remove('text-on-surface-variant');
+            label.classList.add('text-on-surface', 'font-semibold');
+          }
+        } else {
+          badge.classList.remove('bg-primary', 'text-on-primary');
+          badge.classList.add('bg-surface-variant', 'text-on-surface-variant');
+          if (label) {
+            label.classList.remove('text-on-surface', 'font-semibold');
+            label.classList.add('text-on-surface-variant');
+          }
+        }
+      });
+
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    }
+
+    function prevStep(stepNum) {
+      nextStep(stepNum);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant text-body-sm"><div>© 2024 GrandVistas Banquets. All rights reserved.</div><div class="flex gap-space-md"><a class="hover:text-on-surface" href="#">Privacy Policy</a><a class="hover:text-on-surface" href="#">Terms of Service</a><a class="hover:text-on-surface" href="#">Concierge</a></div></div></footer></body></html>
